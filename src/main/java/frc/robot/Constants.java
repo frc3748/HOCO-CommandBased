@@ -13,14 +13,14 @@ package frc.robot;
  * constants are needed, to reduce verbosity.
  */
 public final class Constants {
-  final int BUTTONX = 1;   
-  final int BUTTONA = 2;
-  final int BUTTONB = 3;
-  final int BUTTONY = 4;
-  final int LEFTBUMPER = 5;
-  final int RIGHTBUMPER = 6;
-  final int LEFTTRIGGER = 7;
-  final int RIGHTTRIGGER = 8;
-  final int LEFTSTICK = 11;
-  final int RIGHTSTICK = 12;
+  public static final int BUTTONX = 1;   
+  public static final int BUTTONA = 2;
+  public static final int BUTTONB = 3;
+  public static final int BUTTONY = 4;
+  public static final int LEFTBUMPER = 5;
+  public static final int RIGHTBUMPER = 6;
+  public static final int LEFTTRIGGER = 7;
+  public static final int RIGHTTRIGGER = 8;
+  public static final int LEFTSTICK = 11;
+  public static final int RIGHTSTICK = 12;
 }
