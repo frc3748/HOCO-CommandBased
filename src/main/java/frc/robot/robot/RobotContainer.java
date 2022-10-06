@@ -50,6 +50,7 @@ public class RobotContainer {
     new JoystickButton(joy, BUTTONX).whileHeld(new InstantCommand(head::headSpinClockwise)).whenReleased(new InstantCommand(head::headStop));
     new JoystickButton(joy, BUTTONB).whileHeld(new InstantCommand(head::headSpinCounterClockwise)).whenReleased(new InstantCommand(head::headStop));
     new JoystickButton(joy, BUTTONY).whenPressed(new InstantCommand(hammer::hammerSpin));
+    new JoystickButton(joy, BUTTONA).whenPressed(new InstantCommand(hammer::hammerStop));
   }
 
   /**

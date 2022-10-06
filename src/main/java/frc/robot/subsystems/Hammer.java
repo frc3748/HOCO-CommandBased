@@ -14,7 +14,12 @@ public class Hammer {
     }
 //r
     public void hammerSpin(){
-        hammer.set(ControlMode.PercentOutput, 0.5);
+        hammer.set(ControlMode.PercentOutput, 0.15);
+        System.out.println("hammer spin");
+    }
+
+    public void hammerStop(){
+        hammer.set(ControlMode.PercentOutput, 0);
         System.out.println("hammer spin");
     }
 }
