@@ -12,7 +12,7 @@ public class Hammer {
     public Hammer(){
         hammer = new TalonSRX(17); //forgot the which motor it was
     }
-
+//r
     public void hammerSpin(){
         hammer.set(ControlMode.PercentOutput, 0.5);
         System.out.println("hammer spin");
