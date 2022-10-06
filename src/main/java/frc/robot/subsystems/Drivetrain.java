@@ -29,7 +29,7 @@ public class Drivetrain extends SubsystemBase {
   }
 
   public void drive(double z, double y){
-    double speedMultiplier = 0.75;
+    double speedMultiplier = -0.75;
     double drive = z;
     double turn = y;
     double driveLeftPower = drive - turn;

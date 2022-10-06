@@ -10,11 +10,12 @@ public class Hammer {
     private TalonSRX hammer;
 
     public Hammer(){
-        hammer = new TalonSRX(16); //forgot the which motor it was
+        hammer = new TalonSRX(17); //forgot the which motor it was
     }
 
     public void hammerSpin(){
-        hammer.set(ControlMode.PercentOutput, 0.25);
+        hammer.set(ControlMode.PercentOutput, 0.5);
+        System.out.println("hammer spin");
     }
 }
 

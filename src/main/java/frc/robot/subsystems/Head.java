@@ -13,11 +13,18 @@ public class Head {
         head = new TalonSRX(13); //forgot the which motor it was
     }
 
-    public void headSpin(){
-        head.set(ControlMode.PercentOutput, 0.25);
+    public void headSpinClockwise(){
+        head.set(ControlMode.PercentOutput, 0.75);
+        System.out.println("head spin");
+    }
+
+    public void headSpinCounterClockwise(){
+        head.set(ControlMode.PercentOutput, -0.75);
+        System.out.println("head spin");
     }
 
     public void headStop(){
         head.set(ControlMode.PercentOutput, 0);
+        System.out.println("head stop");
     }
 }

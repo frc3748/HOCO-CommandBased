@@ -47,8 +47,9 @@ public class RobotContainer {
    * edu.wpi.first.wpilibj2.command.button.JoystickButton}.
    */
   private void configureButtonBindings() {
-    new JoystickButton(joy, BUTTONX).whileHeld(new InstantCommand(head::headSpin)).whenReleased(new InstantCommand(head::headStop));
-    new JoystickButton(joy, BUTTONA).whenPressed(new InstantCommand(hammer::hammerSpin));
+    new JoystickButton(joy, BUTTONX).whileHeld(new InstantCommand(head::headSpinClockwise)).whenReleased(new InstantCommand(head::headStop));
+    new JoystickButton(joy, BUTTONB).whileHeld(new InstantCommand(head::headSpinCounterClockwise)).whenReleased(new InstantCommand(head::headStop));
+    new JoystickButton(joy, BUTTONY).whenPressed(new InstantCommand(hammer::hammerSpin));
   }
 
   /**
